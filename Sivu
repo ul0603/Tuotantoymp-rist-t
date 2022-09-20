@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>	
+   <meta charset="utf-8"/>
+   <title> AUTOJEN KUNNOSTUS NYT</title>
+</head>
+<body> 
+    <style>
+        body, html {
+          height: 100%;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .hero-image {
+          background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("ku.jpg");
+          height: 90%;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          position: relative;
+        }
+        
+        .hero-text {
+          text-align: center;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          color: white;
+        }
+        
+        .hero-text button {
+          border: none;
+          outline: 0;
+          display: inline-block;
+          padding: 10px 25px;
+          color: black;
+          background-color: #ddd;
+          text-align: center;
+          cursor: pointer;
+        }
+        
+        .hero-text button:hover {
+          background-color: #555;
+          color: white;
+        }
+    </style>
+        </head>
+        <body>
+        
+        <div class="hero-image">
+          <div class="hero-text">
+            <h1 style="font-size:70px">Onko autosi kunnostuksen tarpeessa?</h1>
+            <p style="font-size:50px">Pistä meidät asialle</p>
+            <button style ="font-size:45px">Ota yhteyttä</button>
+          </div>
+        </div>
+        
+    
+          
+       
+
+    <h1 style="font-size:40px;" style="text-align:center">Yleistä</h1>
+    <p style="text-align:center">-</p>
+    <br>
+    <p style="text-align:center">-</p>
+    <br>
+    <p style="text-align:center">-</p>
+    <br>
+    
+    <h2 style="text-align:center">Palvelut</h2>
+    
+        <div style="text-align:center" class="tab">
+            <button class="tablinks" onclick="openCity(event, 'Peruskurssi')">Peruskurssi</button>
+            <button class="tablinks" onclick="openCity(event, 'Harrastejaosto')">Harrastejaosto</button>
+            <button class="tablinks" onclick="openCity(event, 'Kilpaosasto')">Kilpaosasto</button>
+        </div>
+    
+    <div id="Peruskurssi" class="tabcontent">
+      <h3 style="text-align:center">Peruskurssi</h3>
+      <p style="text-align:center">Peruskurssia pidetään maanantaisin ja torstaisin klo 18.</p>
+    </div>
+    
+    <div id="Harrastejaosto" class="tabcontent">
+      <h3 style="text-align:center">Harrastejaosto</h3>
+      <p style="text-align:center">Harrastejaosto kokoontuu tiistaisin ja perjantaisin klo 19.</p> 
+    </div>
+    <div id="Kilpaosasto" class="tabcontent">
+      <h3 style="text-align:center">Kilpaosasto</h3>
+      <p style="text-align:center">Kilpailujaosto kokoontuu perjantaisin, lauantaisin ja sunnuntaisin klo 16</p>
+    </div>
+    
+    <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+    </script>
+
+    <table style="width:100%">
+        <tr>
+            <th>Peruskurssin opettaja</th>
+            <th>Harrastejaoston ohjaaja</th>
+            <th>Kilpailujaoston valmentaja</th>
+        </tr>
+        <tr>
+            <td style="text-align:center"></tdstyle>Linus Tectips</td>
+            <td style="text-align:center"></tdstyle>Marques Brownlee</td>
+            <td style="text-align:center"></tdstyle>Dmitri </td>
+        </tr>
+        <tr>
+            <td style="text-align:center"></tdstyle>16</td>
+            <td style="text-align:center"></tdstyle>14</td>
+            <td style="text-align:center"></tdstyle>10</td>
+        </tr>
+    </table>
+
+    <form style="text-align: center;" action="/action_page.php">
+        <h1>Ota meihin yhteyttä:</h1>
+        <label for="fname">Etunimi</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">Sukunimi:</label><br>
+        <input type="text" id="lname" name="lname"><br><br>
+        <textarea name="message" rows="20" cols="30">Kirjoita viestisi tähän</textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </form>
+       
+    </body>
+</html>
