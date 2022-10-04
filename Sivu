@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html lang="fi">
-<head>	
-   <meta charset="utf-8"/>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>	
+   
    <title> AUTOJEN KUNNOSTUS NYT</title>
 </head>
 <body> 
@@ -60,36 +65,42 @@
     
           
        
+    <h1 style="text-align: center;">Yleistä firmastamme</h1>
+    <h3 style="text-align:center">Kaipaako amerikanrautasi korjausta? Pistämme kuntoon niin Chevroletit, Cadillacit kuin Dodgetkin! Autokorjaamo Amispadelkorjaamo on jenkkiautojen paras ja ainoa korjaamo Turussa. Toteutamme huollot, kunnostukset ja korjaustyöt laidasta laitaan kaikkiin jenkkiautomerkkeihin. Voit aina kääntyä puoleemme jenkkiautoosi liittyvissä asioissa, autamme sinua sydämen palolla! 
 
-    <h1 style="font-size:40px;" style="text-align:center">Yleistä</h1>
-    <p style="text-align:center">-</p>
+        Jenkkiautoihin tehtäviä korjaustöitä ei yleensä tehdä "listan mukaan", vaan suunnittelemme ne tarkasti yhdessä asiakkaan kanssa.</h3>
     <br>
-    <p style="text-align:center">-</p>
     <br>
-    <p style="text-align:center">-</p>
     <br>
-    
+
     <h2 style="text-align:center">Palvelut</h2>
+    <br>
     
         <div style="text-align:center" class="tab">
-            <button class="tablinks" onclick="openCity(event, 'Peruskurssi')">Peruskurssi</button>
-            <button class="tablinks" onclick="openCity(event, 'Harrastejaosto')">Harrastejaosto</button>
-            <button class="tablinks" onclick="openCity(event, 'Kilpaosasto')">Kilpaosasto</button>
+            <button class="tablinks" onclick="openCity(event, 'Peruskurssi')">Kunnostus</button>
+            <button class="tablinks" onclick="openCity(event, 'Harrastejaosto')">Varaosat</button>
+            <button class="tablinks" onclick="openCity(event, 'Kilpaosasto')">Myynti</button>
         </div>
+        <br>
+        <br>
+        <br>
     
     <div id="Peruskurssi" class="tabcontent">
-      <h3 style="text-align:center">Peruskurssi</h3>
-      <p style="text-align:center">Peruskurssia pidetään maanantaisin ja torstaisin klo 18.</p>
+      <h3 style="text-align:center">Kunnostus</h3>
+      <p style="text-align:center">Työpajamme on auki 8-5 arkipäivisin tule käymään tai jätä viesti.</p>
     </div>
     
+    
     <div id="Harrastejaosto" class="tabcontent">
-      <h3 style="text-align:center">Harrastejaosto</h3>
-      <p style="text-align:center">Harrastejaosto kokoontuu tiistaisin ja perjantaisin klo 19.</p> 
+      <h3 style="text-align:center">Varaosat</h3>
+      <p style="text-align:center">Meiltä saa kaikki amerikkalaiset varaosta myös toimituksella.</p> 
     </div>
+   
     <div id="Kilpaosasto" class="tabcontent">
-      <h3 style="text-align:center">Kilpaosasto</h3>
-      <p style="text-align:center">Kilpailujaosto kokoontuu perjantaisin, lauantaisin ja sunnuntaisin klo 16</p>
+      <h3 style="text-align:center">Myy autosi</h3>
+      <p style="text-align:center">Tule näyttämään autoasi pajalemme tai jätä yhteydenottopyyntö</p>
     </div>
+    
     
     <script>
     function openCity(evt, cityName) {
@@ -106,24 +117,44 @@
       evt.currentTarget.className += " active";
     }
     </script>
+    <br>
+    <br>
 
-    <table style="width:100%">
-        <tr>
-            <th>Peruskurssin opettaja</th>
-            <th>Harrastejaoston ohjaaja</th>
-            <th>Kilpailujaoston valmentaja</th>
-        </tr>
-        <tr>
-            <td style="text-align:center"></tdstyle>Linus Tectips</td>
-            <td style="text-align:center"></tdstyle>Marques Brownlee</td>
-            <td style="text-align:center"></tdstyle>Dmitri </td>
-        </tr>
-        <tr>
-            <td style="text-align:center"></tdstyle>16</td>
-            <td style="text-align:center"></tdstyle>14</td>
-            <td style="text-align:center"></tdstyle>10</td>
-        </tr>
-    </table>
+    <h1 style="text-align: center;"> Tiimin esittely</h1>
+<div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="mies1.jpg" target="_blank">
+            <img src="mies1.jpg" alt="Lights" style="width:60%">
+            <div class="caption">
+              <h3>Peruskurssin opettaja <br> Linus Tectips</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="mies2.jpg" target="_blank">
+            <img src="mies2.jpg" alt="Nature" style="width:60%">
+            <div class="caption">
+              <h3>Harrastejaoston ohjaaja <br> Marquees Brownlee</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="thumbnail">
+          <a href="mies3.jpg" target="_blank">
+            <img src="mies3.jpg" alt="Fjords" style="width:60%">
+            <div class="caption">
+              <h3>Kilpajaoston valmentaja <br> Dimitrevina Sent.</h3>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
 
     <form style="text-align: center;" action="/action_page.php">
         <h1>Ota meihin yhteyttä:</h1>
@@ -131,7 +162,7 @@
         <input type="text" id="fname" name="fname"><br>
         <label for="lname">Sukunimi:</label><br>
         <input type="text" id="lname" name="lname"><br><br>
-        <textarea name="message" rows="20" cols="30">Kirjoita viestisi tähän</textarea>
+        <textarea name="message" rows="10" cols="30">Kirjoita viestisi tähän</textarea>
         <br><br>
         <input type="submit" value="Submit">
       </form>
